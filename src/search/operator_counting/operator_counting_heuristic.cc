@@ -39,6 +39,8 @@ OperatorCountingHeuristic::OperatorCountingHeuristic(
         generator->initialize_constraints(task, lp);
     }
     lp_solver.load_problem(lp);
+    lp_solver.write_lp("problem.lp");
+    exit(0);
 }
 
 int OperatorCountingHeuristic::compute_heuristic(const State &ancestor_state) {

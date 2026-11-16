@@ -44,8 +44,10 @@ def translate(task):
 
 
 def cleanup():
-    os.remove(SAS_FILE)
-    os.remove(PLAN_FILE)
+    if os.path.exists(SAS_FILE):
+        os.remove(SAS_FILE)
+    if os.path.exists(PLAN_FILE):
+        os.remove(PLAN_FILE)
 
 
 def setup_module(module):

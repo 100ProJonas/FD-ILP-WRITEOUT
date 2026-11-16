@@ -921,6 +921,7 @@ create_fast_downward_library(
         operator_counting/delete_relaxation_if_constraints
         operator_counting/delete_relaxation_rr_constraints
         operator_counting/lm_cut_constraints
+        operator_counting/hard_bound_constraints
         operator_counting/operator_counting_heuristic
         operator_counting/pho_constraints
         operator_counting/state_equation_constraints

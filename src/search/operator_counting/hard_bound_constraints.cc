@@ -34,8 +34,7 @@ void HardBoundConstraints::initialize_constraints(
 }
 
 bool HardBoundConstraints::update_constraints(
-    const State &state,
-    lp::LPSolver &lp_solver) {
+    [[maybe_unused]] const State &state, [[maybe_unused]] lp::LPSolver &lp_solver) {
 
     // Bounds are permanent and independent of the state.
     return false;
